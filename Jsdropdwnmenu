@@ -1,0 +1,31 @@
+JavaScript test
+indar 085244045517
+<!----- start drop down - links open in new window ----->
+<form method="post" action="" name="">
+<select name="select001" onChange="window.open(this.options[this.selectedIndex].value,'_blank')">
+<option selected>Webmasters: Free Services For Your Site</option>
+<option>---------------------------------------------------</option>
+<option value="http://www.yoursite.com/guest_book/index.html">Guest
+Book</option>
+<option value="http://www.yoursite.com/tell_a_friend/index.html">Tell
+A Friend</option>
+</select>
+</form>
+<!----- end drop down new window ----->
+
+2. This method opens each link in the same window. These are links on your own site and not another site. The first line contains a label (Site Navigation) to help your guests and improve the usability. Copy and paste the following code into a table and change the labels and links to reflect your own site.
+
+<!----- drop down same window ----->
+<form name="jump">
+<select name="menu" onChange="location=document.jump.menu.options[document.jump.menu.selectedIndex].value;" value="GO">
+<option selected>Site Navigation</option>
+<option value="/index.html">Home</option>
+<option value="/product_reviews.htm">Product Reviews</option>
+<option value="/sitemap.htm">Site Map</option>
+<option value="/advertise.html">Advertise</option>
+<option value="/addsite.htm">Add Your Site</option>
+<option value="/linktous.htm">Link To Us</option>
+<option value="/contact.html">Contact Us</option>
+</select>
+</form>
+<!----- end drop down same window ----->
